@@ -11,12 +11,6 @@ class CreateCarsTable extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
             $table->string('make'); // Марка
-            $table->string('model'); // Модель
-            $table->year('year'); // Год выпуска
-            $table->string('vin')->unique(); // VIN-номер
-            $table->string('color'); // Цвет
-            $table->integer('mileage'); // Пробег
-            $table->decimal('price', 10, 2); // Цена
             $table->timestamps();
         });
     }

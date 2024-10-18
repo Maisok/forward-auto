@@ -1,0 +1,4 @@
+composer install
+env.example
+php artisan key:generate
+php artisan serve
